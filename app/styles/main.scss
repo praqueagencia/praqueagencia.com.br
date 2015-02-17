@@ -12,7 +12,40 @@ body {
 
 .content-logo {
   text-align: center;
-  padding: 100px 40px;
+  padding: 100px 2% 100px 6%;
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.social-links {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  li {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    // background:red;
+    a {
+      display: block;
+      height: 100%;
+      width: 100%;
+      text-indent: -900000px;
+      background: url('../images/icon_email.png')
+    }
+    &:first-child {
+      a {
+        background: url('../images/icon_facebook.png')
+      }
+    }
+    &:last-child {
+      a {
+        background: url('../images/icon_instagram.png')
+      }
+    }
+  }
 }
