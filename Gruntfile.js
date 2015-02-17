@@ -27,6 +27,14 @@ module.exports = function (grunt) {
     // Project settings
     yeoman: appConfig,
 
+    'gh-pages': {
+      options: {
+        base: 'dist',
+        message: 'Auto-generated commit: gh-pages release'
+      },
+      src: ['**']
+    },
+
     // Watches files for changes and runs tasks based on the changed files
     watch: {
       bower: {
